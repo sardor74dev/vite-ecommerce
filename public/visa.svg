@@ -1,0 +1,28 @@
+<svg width="65.000000" height="48.000000" viewBox="0 0 65 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_20_320_dd" x="-0.188354" y="-0.706543" width="64.990967" height="48.407227" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="0.448214"/>
+			<feGaussianBlur stdDeviation="1.49405"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.71765 0 0 0 0 0.71765 0 0 0 0 0.71765 0 0 0 0.078 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4.48214"/>
+			<feGaussianBlur stdDeviation="2.9881"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.71765 0 0 0 0 0.71765 0 0 0 0 0.71765 0 0 0 0.078 0"/>
+			<feBlend mode="normal" in2="effect_dropShadow_1" result="effect_dropShadow_2"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_2" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_20_320_dd)">
+		<rect id="Badge" rx="5.490625" width="46.838390" height="30.254465" transform="translate(8.887946 3.887946)" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<path id="Visa" d="M32.02 14.12L29.84 24.28L27.21 24.28L29.39 14.12L32.02 14.12ZM43.08 20.68L44.46 16.86L45.26 20.68L43.08 20.68ZM46.01 24.28L48.44 24.28L46.32 14.12L44.08 14.12C43.57 14.12 43.15 14.41 42.96 14.86L39.01 24.28L41.77 24.28L42.32 22.76L45.7 22.76L46.01 24.28ZM39.15 20.96C39.16 18.28 35.44 18.13 35.47 16.93C35.47 16.57 35.82 16.18 36.58 16.08C36.96 16.03 38 15.99 39.17 16.54L39.64 14.38C39 14.15 38.19 13.93 37.18 13.93C34.58 13.93 32.75 15.31 32.73 17.29C32.72 18.75 34.04 19.57 35.03 20.06C36.06 20.55 36.4 20.87 36.4 21.32C36.39 22 35.58 22.3 34.83 22.31C33.5 22.33 32.74 21.96 32.12 21.67L31.65 23.9C32.26 24.18 33.4 24.43 34.57 24.44C37.33 24.44 39.14 23.07 39.15 20.96ZM28.26 14.12L24 24.28L21.22 24.28L19.12 16.17C19 15.67 18.89 15.49 18.5 15.28C17.87 14.93 16.82 14.61 15.91 14.41L15.97 14.12L20.44 14.12C21.01 14.12 21.53 14.5 21.65 15.15L22.76 21.03L25.5 14.12L28.26 14.12Z" fill="#1434CB" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<rect id="Badge" rx="5.490625" width="46.838390" height="30.254465" transform="translate(8.887946 3.887946)" stroke="#D6DCE5" stroke-opacity="1.000000" stroke-width="0.224107"/>
+	</g>
+</svg>
