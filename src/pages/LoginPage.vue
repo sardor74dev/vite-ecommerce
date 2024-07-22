@@ -14,18 +14,10 @@ const registrationStore = useRegistrationStore()
 </script>
 <template>
     <div class="my-[10vw] sm:mx-auto sm:w-full sm:max-w-sm">
-        <form @submit.prevent="registrationStore.register()" class="flex flex-col items-center gap-2">
+        <form @submit.prevent="registrationStore.auth()" class="flex flex-col items-center gap-2">
             <h1 class="max-w-[469px] leading-[48px] text-[40px] font-bold font-integral-cf">
-                Sign Up
+                Sign In
             </h1>
-            <input
-                id="username"
-                type="text"
-                class="w-full py-3 pl-12 pr-3 text-base font-normal font-satoshi rounded-3xl bg-stone-100 outline-none" 
-                placeholder="username"
-                v-model="registrationStore.username"
-                required
-            >
             <input
                 id="email"
                 type="email"
@@ -45,13 +37,13 @@ const registrationStore = useRegistrationStore()
             <button
                 class="bg-black flex gap-3.5 items-center w-full py-3 justify-center rounded-3xl cursor-pointer"  
             >
-                <p class="text-white text-base font-semibold font-satoshi">Sign Up</p>
+                <p class="text-white text-base font-semibold font-satoshi">Sign In</p>
                 <img src="/checkout-arrow.svg" alt="arrow">
             </button>
         </form>
         <p class="mt-10 text-center text-sm text-black">
-            Already have an account?
-            <router-link to="/login" class="font-semibold leading-6 text-black">Sign In</router-link>
+            Don't have an account yet?
+            <router-link to="/register" class="font-semibold leading-6 text-black">Sign Up</router-link>
         </p>
     </div>
 </template>

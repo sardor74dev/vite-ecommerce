@@ -1,7 +1,12 @@
 <script setup>
-import { reactive } from 'vue';
+import { computed, reactive } from 'vue';
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute()
+
+const showHeaderAndFooter = computed(() => route.path !== '/register' && route.path !== '/login')
 
 const tabs = reactive([
   {id: 1, text: 'Shop', route: '/'},
@@ -14,9 +19,9 @@ const tabs = reactive([
 
 <template>
   <div class="flex flex-col min-h-full overflow-hidden">
-    <Header :tabs="tabs" />
+    <Header v-if="showHeaderAndFooter" :tabs="tabs" />
     <router-view></router-view>
-    <Footer />
+    <Footer v-if="showHeaderAndFooter" />
   </div>
 </template>
 

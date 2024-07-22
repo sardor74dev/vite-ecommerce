@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref, watch } from 'vue';
+import { computed, onMounted, ref, watch } from 'vue';
 import { useAllProductsStore } from '../stores/AllProductsStore';
 import { useRoute, useRouter } from 'vue-router';
 
@@ -36,7 +36,7 @@ defineProps({
             <p class="text-white text-sm font-medium font-satoshi">Sign up and get 20% off to your first order. Sign Up Now</p>
           </div>
         </div>
-        <img @click="isVisible = false" class="absolute absolute text-white right-5 top-2.5 cursor-pointer" src="/x.svg" alt="x">
+        <img @click="isVisible = false" class="absolute text-white right-5 top-2.5 cursor-pointer" src="/x.svg" alt="x">
       </div>
     </transition>
 
@@ -88,7 +88,10 @@ defineProps({
             <router-link to="/cart">
               <img class="opacity-50 hover:opacity-100" src="/Vector.svg" alt="icon">
             </router-link>
-            <img class="opacity-50 hover:opacity-100" src="/Vector (2).svg" alt="icon">
+            <router-link to="/register">
+              <img class="opacity-50 hover:opacity-100" src="/Vector (2).svg" alt="icon">
+            </router-link>
+            <span class="inline-flex items-center cursor-pointer rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Log out</span>
           </div>
         </div>
       </div>
